@@ -1,5 +1,5 @@
 export const App = (itemCartas) => {
-  
+  console.log("itemCartas: =>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", itemCartas);
   const traerData = document.createElement('div')
   traerData.className = 'TableroApp';
   const contenido = `<img src="${itemCartas.image}" id="data" alt="Pokemon's">` 
@@ -7,6 +7,8 @@ export const App = (itemCartas) => {
   console.log('ver la data del argumento que llega al parametro: ',traerData);
   return traerData 
 }
+
+
   
 
 
