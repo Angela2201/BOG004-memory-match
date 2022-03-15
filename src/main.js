@@ -1,7 +1,6 @@
-import { App } from "./components/App.js";
-import pokemon from "../data/pokemon/pokemon.js";
-console.log(pokemon);
-console.log(App)
+//import { App } from "./components/App.js";
+import pokemon from "./data/pokemon/pokemon.js";
+
 
 
 /* Duplicar las cartas */
@@ -25,7 +24,7 @@ botonJugar.addEventListener("click", () => {
     /* contenedor.appendChild(App(element)); */
     /*Trae los elementos de data pokémon y sus caracteristicas*/
   //});
-  console.log(contenedor);
+ 
   /* Aqui se llama el id del 2ndo div de la pagina 2 para que se muestren las imagenes */
   document.getElementById("contenedorTodas").appendChild(contenedor);
   document.getElementById("pag1").style.display = "none";
@@ -36,7 +35,7 @@ let arrayParaCompararId = new Array();
 let contadorParejas =0;
 
 function retrocederLasCartas() {
-  console.log(arrayParaCompararId)
+  
   const pokebolasVisibles = document.getElementsByClassName("card");
   pokebolasVisibles[arrayParaCompararId[0].id].classList.add("visible");
   pokebolasVisibles[arrayParaCompararId[1].id].classList.add("visible");
@@ -50,7 +49,7 @@ function retrocederLasCartas() {
   arrayParaCompararId = [];
 }
 function compararId(idDeComparar, position) {
-  console.log(idDeComparar);
+  
   const pokemonSeleccionado = { 
     id:position, 
     name:idDeComparar
@@ -64,12 +63,10 @@ function compararId(idDeComparar, position) {
         if (contadorParejas === 9){
           alert("¡GANASTE!")
         }
-        return console.log(true);
-        
+                
         } else {
         setTimeout(retrocederLasCartas, 1000);
-        
-        return console.log(false);
+                
       }
     }
   } else if (arrayParaCompararId.length === 2) {
@@ -97,8 +94,7 @@ function createCards() {
       const idPokemonSeleccionado = parseInt(e.target.id);
       const imagenesPokebolas = document.getElementsByClassName("card");
       const imagenesData = document.getElementsByClassName("pokemon");
-      console.log(idPokemonSeleccionado);
-      //console.log(e.target.dataset.name);
+      
       imagenesPokebolas[idPokemonSeleccionado].classList.add("oculto");
       imagenesPokebolas[idPokemonSeleccionado].classList.remove("visible");
       imagenesData[idPokemonSeleccionado].classList.remove("oculto");
