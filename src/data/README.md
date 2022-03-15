@@ -1,38 +1,18 @@
-# Data (sets de cartas)
+README PROYECTO MEMORY MATCH - POKEMON
 
-Este directorio (carpeta) contiene dos fuentes de datos (sets de cartas) que
-podemos usar en el proyecto. Cada set está en una sub-carpeta distinta:
+¿Quiénes son los principales usuarios de producto?
+Esta actividad va dirigida jóvenes adultos entre las edades de 19 a 25 años que tengan conocimiento de los personajes de la serie Pokémon y estén interesados en participar en juegos interactivos en línea que incluyan a los personajes de la serie.
+Los usuarios prefieren como temática principal en el juego los personajes tradicionales de la serie Pokémon y sus nombre.
+A su vez, esta página va dirigida a todo público que disfrute participando en juegos de memoria online, específicamente de juegos de cartas de diferentes temáticas.
 
-* [`pokemon`](./pokemon)
-* [`webdev`](./webdev)
+¿Cuáles son los objetivos de estos usuarios en relación con el producto?
+Los usuarios se acercan a esta página web con la intención de tener un espacio de distracción y entretenimiento, mientras mejoran sus hábilidades cognitivas.
 
-Dentro de cada carpeta encontrarás dos archivos: uno con la extensión `.js` y
-otro `.json`. Ambos archivos contienen la misma data; la diferencia es que el
-`.js` lo usaremos a través de un [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import),
-mientras que el `.json` está ahí para opcionalmente cargar la data de forma
-asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API).
+¿Cuáles son los componentes principales de la interfaz y por qué?
+- Página de inicio: Donde el usuario encontrará las instrucciones y un botón para iniciar el juego.
+- Tablero de juego: Es la segunda página encontrará el tablero con las cartas para empezar a jugar, un botón el cual pueda direccionarse a la página de inicio y pueda reiniciar el juego nuevamente.
 
-## ¿Cómo agrego mis propios sets de cartas?
+¿Cuándo utilizan o utilizarían el producto?
+Los usuarios utilizarían esta página en sus tiempos libres o cuando requieran de una distracción y mejorar sus hábilidades cognitivas.
 
-Éstas no son las únicas cartas que podemos usar. Si quieres puedes añadir los
-sets de cartas que consideres para tu aplicación. Si eliges agregar sets de
-cartas te recomendamos mantener la misma estructura de los datos (ambos sets de
-ejemplo usan la misma estructura).
-
-Por ejmplo, imaginemos que queremos agregar un set de cartas de gatitos. Para
-hacernos la vida más fácil, dupliquemos un set existente y modifiquémoslo:
-
-```sh
-# Desde el directorio raíz de la aplicación en el terminal, copiamos
-# recursivamente (con la opción `-r`, ya que se trata de un directorio) el
-# directorio `data/pokemon` a la ruta `data/gatitos`.
-cp -r data/pokemon data/gatitos
-
-# Renombramos los archivos de la carpeta gatitos...
-mv data/gatitos/pokemon.js data/gatitos/gatitos.js
-mv data/gatitos/pokemon.json data/gatitos/gatitos.json
-```
-
-Ahora ya puedes editar el contenido de los archivos de gatitos según tus
-necesidades. Ten en cuenta que puedes cambiar el número de elementos (cartas) en
-cada set si quieres también cambiar la dificultad del juego :wink:.
+ANEXO: En la carpeta "prototipos" se encuentran los prototipos de baja y alta fidelidad de este proyecto.
