@@ -1,6 +1,8 @@
 import { App } from "./components/App.js";
 import pokemon from "../data/pokemon/pokemon.js";
 console.log(pokemon);
+console.log(App)
+
 
 /* Duplicar las cartas */
 let dataPokemon = pokemon.items;
@@ -115,3 +117,5 @@ botonRetroceder.addEventListener("click", () => {
   document.getElementById("pag2").style.display = "none";
   document.getElementById("pag1").style.display = "block";
 });
+
+export{createCards}
